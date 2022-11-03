@@ -1,12 +1,18 @@
 import React from "react"
+import Home from "./components/Home"
+import { ChakraProvider } from '@chakra-ui/react'
 
 function App() {
 
+
+
   return (
-    <div className="App">
-     <h1>pokedux</h1>
-    </div>
-  )
+   <ChakraProvider>
+
+      <Home />
+
+    </ChakraProvider>
+   )
 }
 
 export default App
