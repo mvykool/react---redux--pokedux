@@ -13,6 +13,7 @@ const PokemonCard = ({pokemons}) => {
                  <Text fontSize='25px' display='flex' justifyContent='center' m={5}>{pokemon.name}</Text>
                  <chakra.img w={60} m='5px auto' src={pokemon.sprites.front_default} alt='image' />
                  <chakra.p fontSize='25px' display='flex' justifyContent='center' m={5}>{pokemon.abilities.map(ability => ability.ability.name).join(', ')}</chakra.p>
+                 <chakra.p fontSize='25px' display='flex' justifyContent='center' m={5}>{pokemon.types.map(type => type.type.name).join(', ')}</chakra.p>
              </Box>
          })}
    </Box>
