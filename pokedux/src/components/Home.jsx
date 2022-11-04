@@ -33,7 +33,7 @@ return (
       <chakra.label htmlFor="searchId" display='flex' justifyContent='center' m={5} >Search:</chakra.label>
       <Input type="search" id='searchId' w='70%' display='flex' justifyContent='center' m='5px auto'/>
      </Box >
-     { loading ? <Spinner size='xl'display='flex' ml='50%' mt='18%' />: <PokemonCard pokemons={pokemons}/> }
+     { loading ? <Spinner size='xl'display='flex' ml='50%' mt='18%' />: <PokemonCard pokemons={pokemons} /> }
    </Box>
   )
 }
